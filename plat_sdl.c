@@ -47,7 +47,12 @@ int plat_sdl_change_video_mode(int w, int h, int force)
   if (h == 0)
     h = prev_h;
   else
+  {
     prev_h = h;
+  }
+    
+    w = 320;
+    h = 240;
 
   // invalid method might come from config..
   if (plat_target.vout_method != 0
