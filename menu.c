@@ -819,6 +819,7 @@ static void draw_menu_message(const char *msg, void (*draw_more)(void))
 
 	x = g_menuscreen_w / 2 - w * me_mfont_w / 2;
 	y = g_menuscreen_h / 2 - h * me_mfont_h / 2;
+	printf("x:%d, y%d, me_mfont_h=%d, me_mfont_w=%d, g_menuscreen_h=%d, g_menuscreen_w=%d\n", x, y, me_mfont_h, me_mfont_w, g_menuscreen_h, g_menuscreen_w);
 	if (x < 0) x = 0;
 	if (y < 0) y = 0;
 
